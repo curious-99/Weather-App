@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.navbar {
+  font-weight: 400;
+  font-family: "Shippori Antique B1", sans-serif;
+  padding: 1rem 1rem;
+  background-color: white;
+  height: 16vh;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+}
+
+.navbar a {
+  color: #313375;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #ffc938;
+}
+
+.navbar-toggler-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar-toggler-icon div {
+  height: 10px;
+  margin: 2px;
+  width: 100%;
+  background-color: #313375;
+}
+
+.highlight {
+  color: #ffc938;
+  font-weight: 600;
+}
+
+.main-header {
+  color: #313375;
+  height: 100vh;
+  font-family: "Shippori Antique B1", sans-serif;
+}
+
+.row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100vw;
+}
+
+.main_header_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+}
+
+.main_header_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+}
+
+.main_header_left .upper_font {
+  font-size: 2.5rem;
+}
+
+.main_header_left .lower_font {
+  font-size: 1rem;
+}
+
+.main_button {
+  margin-top: 2rem;
+  color: #313375;
+  background-color: #ffc938;
+  border: none;
+  width: 60%;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.main_button:hover {
+  background-color: #ffd86c;
+  color: #292a61;
+}
+
+.outer_carousel {
+  padding: 0 2vw 1vw 0;
+}
+
+.outer_carousel img {
+  border-radius: 12px;
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  width: 100%;
+  background-color: #313375;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.2rem;
+  height: 4vh;
+  font-size: 0.8rem;
+}
+
+.footer div {
+  background-color: #313375;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  .navbar {
+    height: 20vh;
+  }
+  .row1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 76vh;
+    width: 100vw;
+  }
+  .main_header_left {
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 50vh;
+  }
+  .main_header_left .upper_font {
+    font-size: 1.8rem;
+  }
+  .main_header_left .lower_font {
+    font-size: 0.8rem;
+  }
+  .main_header_right {
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 30vh;
+    padding: 10vw;
+  }
+}
+/*# sourceMappingURL=index.css.map */

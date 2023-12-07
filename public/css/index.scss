@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap");
+$primary-color: #313375;
+$base-color: rgb(255, 255, 255);
+$highlight-color: #ffc938;
+$about-color: #666bd0;
+$height: 100vh;
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  .navbar {
+    font-weight: 400;
+    font-family: "Shippori Antique B1", sans-serif;
+    padding: 1rem 1rem;
+    background-color: white;
+    height: 16vh;
+  }
+  
+  .navbar-brand {
+    font-size: 2rem;
+  }
+  
+  .navbar a {
+    color: #313375;
+    text-decoration: none;
+  }
+  .nav-link:hover{
+    color: $highlight-color;
+}
+.navbar-toggler-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    div{
+        height: 10px;
+        margin: 2px;
+        width: 100%;
+        background-color: $primary-color;
+    }
+}
+  .highlight {
+    color: #ffc938;
+    font-weight: 600;
+  }
+
+  .main-header {
+    color: $primary-color;
+    height: $height;
+    font-family: "Shippori Antique B1", sans-serif;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+
+.main_header_right {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.main_header_left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    .upper_font {
+        font-size: 2.5rem;
+    }
+    .lower_font {
+        font-size: 1rem;
+    }
+}
+
+.main_button {
+    margin-top: 2rem;
+    color: $primary-color;
+    background-color: $highlight-color;
+    border: none;
+    width: 60%;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+.main_button:hover {
+    background-color: #ffd86c;
+    color: #292a61;
+}
+
+//Carousel
+.outer_carousel {
+    padding: 0 2vw 1vw 0;
+}
+
+.outer_carousel img {
+    border-radius: 12px;
+    max-width: 100%;
+    height: auto;
+}
+//footer
+.footer {
+    width: 100%;
+    background-color: $primary-color;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+    height: 4vh;
+    font-size: 0.8rem;
+    div{
+        background-color: $primary-color;
+    }
+}
+
+
+
+// media queries
+@media only screen and (max-width: 600px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+      }
+      .navbar {
+        height: 20vh;
+      }
+    .row1{
+        flex-direction: column;
+        height: 76vh;
+        width: 100vw;
+    }
+    .main_header_left{
+        .upper_font{
+            font-size: 1.8rem;
+        }
+        .lower_font{
+            font-size: 0.8rem;
+        }
+        width: 100%;
+        flex: 1;
+        height: 50vh;
+    }
+    .main_header_right{
+        width: 100%;
+        flex: 1;
+        height: 30vh;
+        padding: 10vw;
+    }
+    
+}

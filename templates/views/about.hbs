@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/about.css">
+  <title>Weather</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <div class="all">
+    <div class="container-fluid main-menu">
+      <div class="row">
+        <div class="col-md-12 col-10 mx-auto">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="/">Weather<span class="highlight"> App</span> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/weather">Weather</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about">About Me</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid main-header">
+      <div class="about_main">
+        <div class="about">
+          <h1>About Me</h1>
+          <div class="content">
+            <div class="left">
+              <div class="phomto">
+
+              </div>
+            </div>
+            <div class="right">
+              <p class="first_para">I am a final year student at Indian Institute of Information Technology Ranchi,
+                India
+                pursuing Bachelor of Technology (B.Tech) in Computer Scinece and Engineering.</p>
+              <p class="second_para">I am proficient in C++ with a decent knowledge of Node.js, ExpressJS, React, javascript. I've
+                been
+                doing programming since my 2nd year of B.Tech. I've been into Web Apps Development using REACT since 4th
+                semester
+                of my Bachelor's.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{>footer}}
+  </div>
+</body>
+
+</html>
